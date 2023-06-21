@@ -1,5 +1,5 @@
 {
-  "name": "react-native-crash-tester",
+  "name": "@dwmkerr/react-native-crash-tester",
   "version": "0.2.3",
   "description": "Deliberately crash your app. Good for testing crash reporting services.",
   "main": "lib/commonjs/index",
