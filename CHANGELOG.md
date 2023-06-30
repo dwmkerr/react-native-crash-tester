@@ -1,3 +1,11 @@
+# [0.5.0](https://github.com/cwhenderson20/react-native-crash-tester/compare/v0.4.0...v0.5.0) (2023-06-30)
+
+
+### Features
+
+* add blockUIThread ([324e8e3](https://github.com/cwhenderson20/react-native-crash-tester/commit/324e8e3e0311854411cbb0c831e907bd9c4e8e98))
+* add nativeException function ([952b251](https://github.com/cwhenderson20/react-native-crash-tester/commit/952b25132571d6af82ccd075e95ca40b619dae27))
+
 # [0.4.0](https://github.com/cwhenderson20/react-native-crash-tester/compare/v0.3.0...v0.4.0) (2023-06-30)
 
 
