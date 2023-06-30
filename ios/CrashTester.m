@@ -9,10 +9,12 @@ RCT_EXPORT_METHOD(nativeException:(NSString *)message) {
   [NSException raise:@"Native Exception" format:@"%@", [message description]];
 }
 
-RCT_EXPORT_METHOD(blockUIThread) {
-  //https://stackoverflow.com/questions/29691046/purpose-of-running-dispatch-asyncdispatch-get-main-queue-on-ui-thread
+RCT_EXPORT_METHOD(blockUIThread:(NSNumber *)sleepTimeSeconds) {
+  //  Dispatch this work on the main thread - that'll block the UI.
   dispatch_async(dispatch_get_main_queue(), ^{
-    [NSThread sleepForTimeInterval:60.0f];
+    //  Convert our sleep time seconds into an interval, then block the thread.
+    NSTimeInterval timeInterval = [sleepTimeSeconds doubleValue];
+    [NSThread sleepForTimeInterval:timeInterval];
   });
 }
 

@@ -26,7 +26,7 @@ export default function App() {
           style={styles.buttonLast}
         />
         <Button
-          onPress={() => CrashTester.blockUIThread()}
+          onPress={() => CrashTester.blockUIThread(60)}
           title="Block UI Thread"
           style={styles.buttonLast}
         />
