@@ -25,6 +25,11 @@ export default function App() {
           title="Native Crash with Message"
           style={styles.buttonLast}
         />
+        <Button
+          onPress={() => CrashTester.blockUIThread()}
+          title="Block UI Thread"
+          style={styles.buttonLast}
+        />
       </View>
       <View style={styles.section}>
         <Button onPress={() => CrashTester.jsCrash()} title="JS Crash" />
