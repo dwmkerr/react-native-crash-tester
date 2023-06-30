@@ -12,6 +12,9 @@ const CrashTester = {
   jsCrash(message?: string) {
     throw new Error(message);
   },
+  blockUIThread() {
+    NativeModule.blockUIThread();
+  },
 };
 
 export default CrashTester;
