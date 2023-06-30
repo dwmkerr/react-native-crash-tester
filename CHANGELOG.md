@@ -1,3 +1,5 @@
+## [0.5.1](https://github.com/cwhenderson20/react-native-crash-tester/compare/v0.5.0...v0.5.1) (2023-06-30)
+
 # [0.5.0](https://github.com/cwhenderson20/react-native-crash-tester/compare/v0.4.0...v0.5.0) (2023-06-30)
 
 
