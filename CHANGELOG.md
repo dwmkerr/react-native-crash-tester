@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/cwhenderson20/react-native-crash-tester/compare/v0.3.0...v0.4.0) (2023-06-30)
+
+
+### Features
+
+* add nativeException function ([3428890](https://github.com/cwhenderson20/react-native-crash-tester/commit/3428890acd55fa73e518c348e9646d8163dff328))
+
 # 0.3.0 (2023-06-21)
 
 
