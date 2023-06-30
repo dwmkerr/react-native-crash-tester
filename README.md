@@ -57,6 +57,21 @@ Implementation notes:
 
 - Calls `throw Error` to trigger an exception
 
+### Block the UI Thread
+
+Blocking the UI thread can be useful to test things like [Watchdog Terminations](https://developer.apple.com/documentation/xcode/addressing-watchdog-terminations):
+
+```js
+import CrashTester from 'react-native-crash-tester';
+
+// block the UI thread for 60 seconds...
+CrashTester.blockUIThread(60);
+```
+
+Implementation notes:
+
+- For iOS, calls `sleepForTimeInterval` on `dispatch_get_main_queue` to block the UI thread
+
 ### Test a React Error Boundary
 
 ```js
